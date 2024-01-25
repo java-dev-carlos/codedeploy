@@ -3,6 +3,8 @@ os: linux
 files:
   - source: Config/config.txt
     destination: /webapps/Config
+  - source: Scripts/sleeper.sh
+    destination: /Scripts/Scripts
 hooks:
   ApplicationStart:
     - location: Scripts/Sleeper.sh
