@@ -10,6 +10,4 @@ phases:
       # Example: npm install, pip install, gradle build, etc.
   post_build:
     commands:
-      - echo "Waiting for 10 minutes..."
-      - sleep 600  # 600 seconds = 10 minutes
-      - echo "Finishing deployment"
+      - echo "Passing to deployment"
