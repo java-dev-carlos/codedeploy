@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Install phase: Install dependencies here, if any"
+  build:
+    commands:
+      - echo "Build phase: Run build commands here"
+      # Example: npm install, pip install, gradle build, etc.
+  post_build:
+    commands:
+      - echo "Waiting for 10 minutes..."
+      - sleep 600  # 600 seconds = 10 minutes
+      - echo "Finishing deployment"
